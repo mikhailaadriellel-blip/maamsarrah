@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>MALIGAYANG ARAW NG MGA GURO, MA'AM SARRAH!</title>
+<style>
+body {
+background-color: #655A7C;
+color: #655A7C;
+font-family: "Times New Roman", serif;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.page {
+min-height: 100vh;
+box-sizing: border-box;
+padding: 100px 25px;
+}
+h1 {
+font-size: 45px;
+margin-bottom: 25px;
+}
+p {
+font-size: 21px;
+line-height: 1.6;
+}
+.welcome-box {
+background-color: #AB92BF;
+max-width: 700px;
+padding: 50px 30px;
+margin: auto;
+border: 3px solid #FDF1E2;
+border-radius: 15px;
+}
+.welcome-box h1 {
+color: #655A7C;
+}
+.button {
+background-color: #655A7C;
+color: #FDF1E2;
+padding: 15px 35px;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+font-family: "Times New Roman:, serif;
+cursor: pointer;
+margin-top: 20px;
+}
+.button:hover {
+background-color:#FDF1E2;
+}
+#secondPage {
+display: none;
+}
+.letter {
+background-color: #AB92BF;
+color: #655A7C;
+max-width: 750px;
+margin: auto;
+padding: 45px;
+border: 3px solid #FDF1E2;
+border-radius: 15px;
+text-align: left;
+}
+.letter h2 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 35px;
+}
+.letter p {
+font-size: 19px;
+line-height: 1.8;
+}
+.signature {
+margin-top: 30px;
+}
+.back-button {
+background-color: #655A7C;
+color: #FDF1E2;
+border: none;
+padding: 12px 25px;
+font-family: "Times New Roman", serif;
+font-size: 17px;
+border-radius: 8px;
+cursor: pointer;
+display: block;
+margin: 30px auto 0;
+}
+</style>
+</head>
+<body>
+<!-- FIRST PAGE-->
+<div id="firstPage" class="page">
+<div class="welcome-box">
+<h1>Maligayang pagdating, Ginang Sarrah!!</h1>
+<p>October 5, 2026</p>
+<p>Pindutin ang pindutan sa ibaba</p>
+<button class="button" onclick="openLetter()">
+Buksan ang surpresa
+</button>
+</div>
+</div>
+<!-- SECOND PAGE -->
+<div id="secondPage" class="page">
+<div class="letter">
+<h1>Maligayang Kaarawan ng mga Guro!</h1>
+<center>
+<img src="ibarreta.jpg" height="200" width="200">
+</center>
+<p>Sa aming guro sa asignaturang Filipino,</p>
+<p>Hindi lang po namin natutunan ang mga aralin sa Filipino, natutunan din naming pahalagahan ang sariling nating wika.</p>
+<p>Salamat po kasi sa bawat pagtuturo ninyo, hindi lang kaalaman ang binibigay niyo saamin. Binibigyan niyo kami ng dahilan para mas kilalanin at ipagmalaki kung sino tayo.</p>
+<p>Sobrang grateful rin po kami sainyo kasi nararamdaman po namin yung motherly presence niyo po kada pumapasok po kayo sa'min, sana gumaling kana po. Mahal ka namin ma'am!</p>
+<p>Happy Teacher's Day, po!
+</p>
+<p class="signature">
+Coded by Adrielle
+</p>
+<button class="back-button" onclick="goBack()">
+< back
+</button>
+</div>
+</div>
+<!-- JAVASCRIPT -->
+<script>
+function openLetter() {
+document.getElementById("firstPage").style.display="none";
+document.getElementById("secondPage").style.display="block";
+}
+function goBack() {
+document.getElementById("secondPage").style.display="none";
+document.getElementById("firstPage").style.display="block";
+}
+</script>
+</body>
+</html>
